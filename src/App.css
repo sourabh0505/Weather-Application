@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+body{
+    color: white;
+    width: 100vw;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+    height: 100vh;
+    background: url('http://surl.li/jhmyk') no-repeat center center/cover;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.multiplecontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.locationandtemperature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.values{
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.searchbar{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-right: .5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+.searchbtn{
+    padding: 0.5rem;
+    border: none;
+    border-radius: .3rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        font-size: 45%;
+    }
   }
-}
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @media only screen and (min-width: 600px) {
+    body {
+        width: 100%;
+        font-size: 70%;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+
+  @media only screen and (min-width: 768px) {
+    body {
+        width: 100%;
+        font-size: 80%;
+    }
+  } 
+  
+ 
+  @media only screen and (min-width: 992px) {
+    body {
+        width: 100%;
+        font-size: 90%;
+    }
+  } 
+  
+ 
+  @media only screen and (min-width: 1200px) {
+    body {
+        width: 100%;
+        font-size: 100%;
+
+    }
 }
