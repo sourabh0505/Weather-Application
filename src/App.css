@@ -6,7 +6,7 @@ body{
 
 .app{
     height: 100vh;
-    background: url('http://surl.li/jhmyk') no-repeat center center/cover;
+    background: url('../public/Images/beach.jpg') no-repeat center center/cover;
     position: relative;
     padding: 2rem;
     display: flex;

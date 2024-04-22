@@ -9,7 +9,7 @@ function App() {
   
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=e94203882f1068d1f5dfefcbb4d365cd`;
 
-  const fetchLocation = (event) =>{
+  const fetchLocation = () =>{
     fetch(apiUrl)
     .then((response) =>{
       return response.json()
